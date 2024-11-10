@@ -14,7 +14,7 @@ output=turtle.Pen()
 #Define the tkinter.
 root=Tk()
 
-#Title of the tkinter window.
+#Title of the Tkinter window.
 root.title('Come and try!')
 
 #Define and grid up the labels.
@@ -31,7 +31,7 @@ screen=turtle.Screen()
 #Setup the screen's width and height.
 screen.setup(600,600)
 
-#Change the colour od the background.
+#Change the color of the background.
 turtle.bgcolor('#b25a38')
 
 #Make the turtle invisible.
@@ -89,7 +89,7 @@ wheel()
 
 #Spin the wheel!
 def spin(times):
-    #The larger speed is, the faster it will start and will make it spin longer.
+    #The larger the speed is, the faster it will start and will make it spin longer.
     speed=15
     limit=random.randint(10,15)/2000
     while speed>limit:
@@ -120,9 +120,8 @@ def spin(times):
         output.write('cyan',font=('Bahnschrift Condensed',30),align='center')
     else:
         output.write('purple',font=('Bahnschrift Condensed',30),align='center')
-        
 
-#When the tkinter's button is press.
+#When the tkinter's button is pressed.
 def click():
     spin(random.randint(30,50)/20000)
 
@@ -136,7 +135,7 @@ label5=Label(root,text='you can see below and note your option here.',bg='light 
 #label4.grid(row=4,column=0,columnspan=2)
 #label5.grid(row=5,column=0,columnspan=2)
 
-#Define colour labels
+#Define color labels
 colour1=Label(root,text='1) Red: ')
 colour2=Label(root,text='2) Pink: ')
 colour3=Label(root,text='3) Blue: ')
@@ -174,9 +173,7 @@ colour8.grid(row=13,column=0)
 colour9.grid(row=14,column=0)
 colour10.grid(row=15,column=0)
 
-
 #Grid up entries.
-
 e1.grid(row=6,column=1)
 e2.grid(row=7,column=1)
 e3.grid(row=8,column=1)
@@ -187,7 +184,6 @@ e7.grid(row=12,column=1)
 e8.grid(row=13,column=1)
 e9.grid(row=14,column=1)
 e10.grid(row=15,column=1)
-
 
 #Ending!
 root.mainloop()

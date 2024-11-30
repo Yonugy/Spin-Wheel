@@ -12,5 +12,7 @@ Just type your choices in the text boxes to record your choices.
 ![image](https://github.com/user-attachments/assets/9df79552-81f3-4208-ae86-d50e5e3eb4ca)
 <br>Tada! It helped you to choose a color.
 
-
+# Enhancement
+1) Change the colors in the available by changing the element in the list.
+![image](https://github.com/user-attachments/assets/4319d25f-fd1e-4eaf-88fb-3fcd79bc3187)
 

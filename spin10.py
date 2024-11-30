@@ -14,7 +14,7 @@ output=turtle.Pen()
 #Define the tkinter.
 root=Tk()
 
-#Title of the Tkinter window.
+#Title of the tkinter window.
 root.title('Come and try!')
 
 #Define and grid up the labels.
@@ -31,7 +31,7 @@ screen=turtle.Screen()
 #Setup the screen's width and height.
 screen.setup(600,600)
 
-#Change the color of the background.
+#Change the colour od the background.
 turtle.bgcolor('#b25a38')
 
 #Make the turtle invisible.
@@ -50,7 +50,7 @@ t.speed(0)
 d.speed(0)
 
 #The color in the pie of the wheel.
-color=['red','pink','blue','gold','green','orange','cyan','purple','yellow','light blue']
+color=['red','pink','blue','grey','green','orange','cyan','purple','yellow','light blue']
 
 #Every piece of the wheel.
 def pie(color):
@@ -89,7 +89,7 @@ wheel()
 
 #Spin the wheel!
 def spin(times):
-    #The larger the speed is, the faster it will start and will make it spin longer.
+    #The larger speed is, the faster it will start and will make it spin longer.
     speed=15
     limit=random.randint(10,15)/2000
     while speed>limit:
@@ -101,27 +101,28 @@ def spin(times):
         speed-=speed*times
     output.clear()
     if 18<=t.heading()<54:
-        output.write('yellow',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[8],font=('Bahnschrift Condensed',30),align='center')
     elif 54<=t.heading()<90:
-        output.write('light blue',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[9],font=('Bahnschrift Condensed',30),align='center')
     elif 90<=t.heading()<126:
-        output.write('red',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[0],font=('Bahnschrift Condensed',30),align='center')
     elif 126<=t.heading()<162:
-        output.write('pink',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[1],font=('Bahnschrift Condensed',30),align='center')
     elif 162<=t.heading()<198:
-        output.write('blue',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[2],font=('Bahnschrift Condensed',30),align='center')
     elif 198<=t.heading()<234:
-        output.write('gold',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[3],font=('Bahnschrift Condensed',30),align='center')
     elif 234<=t.heading()<270:
-        output.write('green',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[4],font=('Bahnschrift Condensed',30),align='center')
     elif 270<=t.heading()<306:
-        output.write('orange',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[5],font=('Bahnschrift Condensed',30),align='center')
     elif 306<=t.heading()<342:
-        output.write('cyan',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[6],font=('Bahnschrift Condensed',30),align='center')
     else:
-        output.write('purple',font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[7],font=('Bahnschrift Condensed',30),align='center')
 
-#When the tkinter's button is pressed.
+
+#When the tkinter's button is press.
 def click():
     spin(random.randint(30,50)/20000)
 
@@ -135,17 +136,17 @@ label5=Label(root,text='you can see below and note your option here.',bg='light 
 #label4.grid(row=4,column=0,columnspan=2)
 #label5.grid(row=5,column=0,columnspan=2)
 
-#Define color labels
-colour1=Label(root,text='1) Red: ')
-colour2=Label(root,text='2) Pink: ')
-colour3=Label(root,text='3) Blue: ')
-colour4=Label(root,text='4) Gold: ')
-colour5=Label(root,text='5) Green: ')
-colour6=Label(root,text='6) Orange: ')
-colour7=Label(root,text='7) Cyan: ')
-colour8=Label(root,text='8) Purple: ')
-colour9=Label(root,text='9) Yellow: ')
-colour10=Label(root,text='10) Light Blue: ')
+#Define colour labels
+colour1=Label(root,text=f'1) {color[0]}: ')
+colour2=Label(root,text=f'2) {color[1]}: ')
+colour3=Label(root,text=f'3) {color[2]}: ')
+colour4=Label(root,text=f'4) {color[3]}: ')
+colour5=Label(root,text=f'5) {color[4]}: ')
+colour6=Label(root,text=f'6) {color[5]}: ')
+colour7=Label(root,text=f'7) {color[6]}: ')
+colour8=Label(root,text=f'8) {color[7]}: ')
+colour9=Label(root,text=f'9) {color[8]}: ')
+colour10=Label(root,text=f'10) {color[9]}: ')
 
 #Define entries.
 e1=Entry(root)
@@ -173,7 +174,9 @@ colour8.grid(row=13,column=0)
 colour9.grid(row=14,column=0)
 colour10.grid(row=15,column=0)
 
+
 #Grid up entries.
+
 e1.grid(row=6,column=1)
 e2.grid(row=7,column=1)
 e3.grid(row=8,column=1)
@@ -184,6 +187,7 @@ e7.grid(row=12,column=1)
 e8.grid(row=13,column=1)
 e9.grid(row=14,column=1)
 e10.grid(row=15,column=1)
+
 
 #Ending!
 root.mainloop()

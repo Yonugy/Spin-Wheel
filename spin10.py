@@ -52,6 +52,10 @@ d.speed(0)
 #The color in the pie of the wheel.
 color=['red','pink','blue','grey','green','orange','cyan','purple','yellow','light blue']
 
+#Setting the display text font and size
+fontname='Bahnschrift Condensed'
+fontsize=30
+
 #Every piece of the wheel.
 def pie(color):
     t.fillcolor(color)
@@ -101,25 +105,25 @@ def spin(times):
         speed-=speed*times
     output.clear()
     if 18<=t.heading()<54:
-        output.write(color[8],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[8],font=(fontname,fontsize),align='center')
     elif 54<=t.heading()<90:
-        output.write(color[9],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[9],font=(fontname,fontsize),align='center')
     elif 90<=t.heading()<126:
-        output.write(color[0],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[0],font=(fontname,fontsize),align='center')
     elif 126<=t.heading()<162:
-        output.write(color[1],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[1],font=(fontname,fontsize),align='center')
     elif 162<=t.heading()<198:
-        output.write(color[2],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[2],font=(fontname,fontsize),align='center')
     elif 198<=t.heading()<234:
-        output.write(color[3],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[3],font=(fontname,fontsize),align='center')
     elif 234<=t.heading()<270:
-        output.write(color[4],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[4],font=(fontname,fontsize),align='center')
     elif 270<=t.heading()<306:
-        output.write(color[5],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[5],font=(fontname,fontsize),align='center')
     elif 306<=t.heading()<342:
-        output.write(color[6],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[6],font=(fontname,fontsize),align='center')
     else:
-        output.write(color[7],font=('Bahnschrift Condensed',30),align='center')
+        output.write(color[7],font=(fontname,fontsize),align='center')
 
 
 #When the tkinter's button is press.

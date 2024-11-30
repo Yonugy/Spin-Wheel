@@ -10,7 +10,7 @@ This program combines the Turtle and Tkinter modules to create 2 interfaces at t
 Click the Spin button to start spinning the wheel.
 Just type your choices in the text boxes to record your choices.
 ![image](https://github.com/user-attachments/assets/9df79552-81f3-4208-ae86-d50e5e3eb4ca)
-Tada! It helped you to choose a color.
+<br>Tada! It helped you to choose a color.
 
 
 

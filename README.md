@@ -16,3 +16,6 @@ Just type your choices in the text boxes to record your choices.
 1) Change the colors in the available by changing the element in the list.
 ![image](https://github.com/user-attachments/assets/4319d25f-fd1e-4eaf-88fb-3fcd79bc3187)
 
+2) Change the display text font and size.
+<br>![image](https://github.com/user-attachments/assets/259c97e4-fc70-43e1-bfa5-490919338ac1)
+
